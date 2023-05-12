@@ -7,4 +7,9 @@
         <item name="colorOnPrimary">@color/dark_button</item>
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <style name="textAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/dark_text</item>
+    </style>
+
 </resources>

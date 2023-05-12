@@ -8,5 +8,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="textAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/light_text</item>
+    </style>
+
     <style name="Theme.BudgetAppKotlin" parent="Base.Theme.BudgetAppKotlin" />
 </resources>
