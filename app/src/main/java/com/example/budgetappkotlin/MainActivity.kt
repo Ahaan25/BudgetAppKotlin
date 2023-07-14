@@ -1,8 +1,10 @@
 package com.example.budgetappkotlin
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Switch
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
@@ -15,6 +17,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val switch:Switch=findViewById(R.id.switch1)
+        val budgetButton=findViewById<Button>(R.id.button1)
+        val transactionButton=findViewById<Button>(R.id.button2)
+
+        budgetButton.setOnClickListener {
+            val intent = Intent(this, BudgetActivity::class.java)
+            startActivity(intent)
+        }
+
+        transactionButton.setOnClickListener {
+            val intent = Intent(this, TransactionsActivity::class.java)
+            startActivity(intent)
+        }
+
 
         val sharedPreferences=getSharedPreferences("theme", Context.MODE_PRIVATE)
         val editor=sharedPreferences.edit()
